@@ -1,0 +1,108 @@
+.page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #1f2621;
+}
+
+.card {
+    width: 400px;
+
+    background: #2b342d;
+
+    border: 1px solid #3c4b3f;
+
+    border-radius: 12px;
+
+    padding: 32px;
+}
+
+.title {
+    text-align: center;
+
+    color: #c29a5c;
+
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+
+    color: #b5b0a1;
+
+    margin-bottom: 24px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+.input {
+    padding: 12px;
+
+    border-radius: 8px;
+
+    border: 1px solid #3c4b3f;
+
+    background: #1f2621;
+
+    color: white;
+
+    font-size: 14px;
+}
+
+.input:focus {
+    outline: none;
+
+    border-color: #c29a5c;
+}
+
+.button {
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #c29a5c;
+
+    color: #1f2621;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 6px;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+.error {
+    color: #ff7b7b;
+
+    text-align: center;
+
+    margin-bottom: 12px;
+}
+
+.link {
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: #b5b0a1;
+}
+
+.link a {
+    color: #c29a5c;
+
+    text-decoration: none;
+}
