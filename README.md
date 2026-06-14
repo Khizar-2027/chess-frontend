@@ -1,16 +1,33 @@
-# React + Vite
+# Chess Platform — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React frontend for the Chess Platform portfolio project.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** https://khizar-chess.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Backend repo:** https://github.com/Khizar-2027/chess-backend
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React, React Router, CSS Modules
+- react-chessboard
+- Axios
+- Deployed on Vercel
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Local Development
+
+```bash
+git clone https://github.com/Khizar-2027/chess-frontend
+cd chess-frontend
+npm install
+npm run dev
+```
+
+Make sure backend is running on `http://localhost:8000`.
+
+---
+
+> Full feature list and backend setup in the [backend repo](https://github.com/Khizar-2027/chess-backend).
