@@ -92,7 +92,7 @@
     align-items: stretch;
     gap: 8px;
     flex-shrink: 0;
-    width: 480px;
+    width: min(480px, calc(100vw - 32px));
 }
 
 

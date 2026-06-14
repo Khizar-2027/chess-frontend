@@ -27,6 +27,8 @@ function Game() {
 
     const socketRef = useRef(null);
 
+    const boardSize = Math.min(480, window.innerWidth - 32);
+
     useEffect(() => {
         const token = localStorage.getItem("access_token");
         const wsBase = import.meta.env.VITE_WS_BASE_URL;
@@ -272,7 +274,7 @@ function Game() {
                     {/* Board */}
                     <div className={styles.boardWrapper}>
                         <Chessboard
-                            boardWidth={480}
+                            boardWidth={boardSize}
                             position={fen}
                             onPieceDrop={onPieceDrop}
                             onPromotionPieceSelect={onPromotionPieceSelect}
