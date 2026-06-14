@@ -17,6 +17,14 @@ function Dashboard() {
         fetchAll();
     }, []);
 
+    useEffect(() => {
+        const keepAlive = setInterval(() => {
+            api.get("/api/games/").catch(() => {});
+        }, 10 * 60 * 1000); // every 10 minutes
+
+        return () => clearInterval(keepAlive);
+    }, []);
+
     const fetchAll = async () => {
         setLoading(true);
         try {
